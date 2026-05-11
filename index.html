@@ -355,26 +355,20 @@
     z-index: 1;
     aspect-ratio: 3/4;
     background: var(--surface2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Syne', sans-serif;
-    font-size: 5rem;
-    font-weight: 800;
-    color: var(--accent);
     overflow: hidden;
   }
-  .photo-placeholder::before {
-    content: 'EGR';
-    position: relative;
-    z-index: 1;
+  .photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    filter: grayscale(20%) contrast(1.05);
+    transition: filter 0.4s ease, transform 0.4s ease;
   }
-  .photo-placeholder .bg-text {
-    position: absolute;
-    font-size: 12rem;
-    color: var(--dim);
-    opacity: 0.2;
-    font-weight: 800;
+  .photo-frame:hover .photo-placeholder img {
+    filter: grayscale(0%) contrast(1);
+    transform: scale(1.03);
   }
 
   .photo-badge {
@@ -892,9 +886,8 @@
 <!-- ABOUT -->
 <section id="about">
   <div class="photo-frame reveal">
-    <img src="WhatsApp Image 2024-01-10 at 00.07.56.jpeg" alt="">
     <div class="photo-placeholder">
-      <span class="bg-text">EGR</span>
+      <img src="WhatsApp Image 2026-05-11 at 16.39.53.jpeg" alt="Ezra Gilang Raharjo">
     </div>
     <div class="photo-badge">
       SOFTWARE<br>ENGINEER
