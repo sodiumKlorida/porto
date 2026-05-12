@@ -1,4 +1,4 @@
-# Ezra Gilang Raharjo — Portfolio Website
+# Ezra Gilang Raharjo — Portfolio Website (vibe code)
 
 > Personal portfolio website dengan dark mode untuk Ezra Gilang Raharjo, mahasiswa Rekayasa Perangkat Lunak Universitas Telkom Surabaya.
 
